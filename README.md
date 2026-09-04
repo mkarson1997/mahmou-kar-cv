@@ -13,21 +13,34 @@ If you only have a few minutes, start with these repositories:
 
 | Project | What it demonstrates | Stack |
 |---|---|---|
-| [Abeer Inventory](https://github.com/mkarson1997/abeer-inventory-1.0.0) | Secure multilingual inventory system with RBAC, CSRF protection, audit trail, backups, Docker and automated tests | Python, Flask, SQLite, Docker |
-| [CargoAPI](https://github.com/mkarson1997/CargoAPI) | Layered backend architecture, carrier-selection business rules, EF Core persistence, background reporting and CI | .NET, EF Core, SQL Server, Hangfire |
-| [Chest X-Ray CNN](https://github.com/mkarson1997/Chest_XRay_CNN_Projem) | End-to-end binary image-classification workflow and evaluation | Python, TensorFlow/Keras, NumPy, scikit-learn |
-| [Karatay Schedule Builder](https://github.com/mkarson1997/karatay-ders-program) | Constraint-aware scheduling logic, collision handling and browser-side PDF export | HTML, CSS, JavaScript |
-| [Digital East](https://github.com/mkarson1997/digital_east) | Arabic-first RTL responsive multi-page web implementation | HTML, CSS, JavaScript |
+| [Abeer Inventory](https://github.com/mkarson1997/abeer-inventory-1.0.0) | Secure multilingual inventory system with RBAC, CSRF, audit trail, automated tests, threat model, ADRs, backups and Docker | Python, Flask, SQLite, Docker |
+| [CargoAPI](https://github.com/mkarson1997/CargoAPI) | Layered backend architecture, carrier-selection rules, EF Core, Hangfire, xUnit/Moq tests, architecture docs and green CI | .NET, EF Core, SQL Server, Hangfire, xUnit |
+| [Chest X-Ray CNN](https://github.com/mkarson1997/Chest_XRay_CNN_Projem) | Applied ML workflow with model card, responsible-use boundaries and a reproducible experiment protocol | Python, TensorFlow/Keras, NumPy, scikit-learn |
+| [Karatay Schedule Builder](https://github.com/mkarson1997/karatay-ders-program) | Constraint-aware scheduling, extracted/testable conflict core, privacy hardening and browser-side PDF export | JavaScript, Node tests, HTML, CSS |
+| [Digital East](https://github.com/mkarson1997/digital_east) | Arabic-first RTL responsive site with GitHub Pages and an automated static-reference quality gate | HTML, CSS, JavaScript, Python, GitHub Actions |
 | [Restaurant Web App](https://github.com/mkarson1997/karzoun-lokantasi) | Multi-page customer journey covering menu, ordering, account and profile flows | HTML, CSS, JavaScript |
+
+## Engineering Evidence
+
+The portfolio is being hardened around evidence that another engineer can inspect rather than claims that only appear in a CV:
+
+- automated unit tests and CI for backend business rules,
+- dependency-free tests for browser scheduling logic,
+- security policies, threat modeling and architecture decision records,
+- reproducibility/model documentation for ML work,
+- static-site quality validation,
+- privacy review and removal of unnecessary personally identifiable telemetry,
+- explicit open-source licensing plus third-party licensing boundaries,
+- tracked issues that distinguish completed work from unresolved domain decisions.
 
 ## Engineering Areas
 
 - **Backend:** REST APIs, layered architecture, business rules, validation, background processing
 - **Data:** SQL Server, SQLite, Entity Framework Core, relational data modeling
-- **Security:** RBAC, CSRF protection, session hardening, safe uploads, security headers
-- **AI/ML:** TensorFlow/Keras, CNN workflows, evaluation and visualization
+- **Security:** RBAC, CSRF protection, session hardening, safe uploads, threat modeling, audit trails
+- **AI/ML:** TensorFlow/Keras, CNN workflows, evaluation, responsible model documentation
 - **Frontend:** responsive interfaces, JavaScript, RTL and multilingual UI
-- **Delivery:** Docker, CI, health checks, reproducible local setup and technical documentation
+- **Delivery:** Docker, GitHub Actions, automated tests, health checks and reproducible setup
 
 ## Engineering Standard
 
@@ -37,18 +50,25 @@ Correctness → Security → Maintainability → Observability → User experien
 
 A repository should be understandable, runnable, testable and reviewable by another engineer. I am actively curating this account around that standard rather than repository count.
 
-## What You Will Find Here
+## Open Source
 
-- production-oriented backend case studies,
-- security-focused application engineering,
-- business-rule-heavy web projects,
-- applied machine-learning work,
-- multilingual and RTL user interfaces,
-- technical documentation, CI and reproducible setup instructions.
+The main public engineering repositories are being standardized with:
+
+- an explicit open-source license where appropriate,
+- `SECURITY.md`,
+- contribution guidance,
+- PR/issue workflows,
+- automated validation,
+- architecture/reproducibility documentation,
+- third-party licensing notices when external assets, fonts, datasets or dependencies are involved.
+
+## GitHub Profile README
+
+A recruiter-facing profile README is already prepared in [`PROFILE_README_DRAFT.md`](PROFILE_README_DRAFT.md). The remaining account-level step is creating the special public repository `mkarson1997/mkarson1997` and pinning the six strongest public repositories. That step is tracked in the repository issues because repository creation/profile pins are account-level GitHub actions rather than source-file changes.
 
 ## Current Portfolio Direction
 
-This account is being consolidated into a focused engineering portfolio. Public repositories are being documented and hardened, while larger private products are reviewed separately before any public showcase version is published to avoid exposing credentials, private data or proprietary implementation details.
+Larger private products are being kept private until a sanitized showcase edition can be reviewed for credentials, private data, proprietary implementation details and third-party licensing. They will not be made public simply to increase repository count.
 
 ## Contact
 
