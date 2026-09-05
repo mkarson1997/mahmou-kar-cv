@@ -5,7 +5,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-mkarson1997-181717?logo=github)](https://github.com/mkarson1997)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live-0A66C2)](https://mkarson1997.github.io/mahmou-kar-cv/)
 
-## Recruiter Quick View
+## Featured Engineering Projects
 
 I build software that goes beyond interface work: business rules, data modeling, authorization, background jobs, testing, deployment, security hardening and operational tooling.
 
